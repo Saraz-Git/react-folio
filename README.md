@@ -14,4 +14,4 @@ The following image shows the web application's appearance and functionality:
 
 - The URL of the deployed application.
 
-- The URL of the GitHub repository:https://github.com/Saraz-Git/react-portfolio
+- The URL of the GitHub repository:https://github.com/Saraz-Git/react-folio
