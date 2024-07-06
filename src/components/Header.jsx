@@ -11,7 +11,7 @@ const Header = () => {
    const {toggleColorMode} = useColorMode();
   return (
 
-    <Flex h='320px' minW='450px' backgroundImage={'url(/background.png)'}
+    <Flex h='320px' minW='320px' backgroundImage={'url(/background.png)'}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}>
      <Flex justifyContent ={"space-between"} alignItems={'end'} w={'full'} my='auto' px={10} mx={0}>
