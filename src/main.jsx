@@ -6,7 +6,11 @@ import { ChakraProvider } from '@chakra-ui/provider'
 import { mode } from '@chakra-ui/theme-tools';
 import { extendTheme } from '@chakra-ui/theme-utils';
 import { ColorModeScript } from "@chakra-ui/color-mode";
-import { BrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AboutPage from './pages/AboutPage.jsx'
+import PortfolioPage from './pages/PortfolioPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import ResumePage from './pages/ResumePage.jsx'
 
 const styles ={
   global:(props)=>({
@@ -31,14 +35,38 @@ const colors ={
 
 const theme = extendTheme({config,styles,colors});
 
+const router = createBrowserRouter([
+	{
+		path: '/',
+		element: <App />,
+		children: [
+			{
+				index: true,
+				element: <AboutPage />,
+			},
+			{
+				path: '/Portfolio',
+				element: <PortfolioPage />,
+			},
+			{
+				path: '/Contact',
+				element: <ContactPage />,
+			},
+			{
+				path: '/Resume',
+				element: <ResumePage />,
+			},
+		],
+	},
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+   
     <ChakraProvider theme={theme}>
      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <App />
+    <RouterProvider router={router} />
     </ChakraProvider>
-    </BrowserRouter>
+   
   </React.StrictMode>,
 )
