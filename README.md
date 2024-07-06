@@ -12,6 +12,6 @@ The following image shows the web application's appearance and functionality:
 
 ## Review
 
-- The URL of the deployed application.
+- The URL of the deployed application: https://shuying-folio.netlify.app/
 
 - The URL of the GitHub repository:https://github.com/Saraz-Git/react-folio
