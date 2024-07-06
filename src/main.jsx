@@ -45,15 +45,15 @@ const router = createBrowserRouter([
 				element: <AboutPage />,
 			},
 			{
-				path: '/Portfolio',
+				path: '/portfolio',
 				element: <PortfolioPage />,
 			},
 			{
-				path: '/Contact',
+				path: '/contact',
 				element: <ContactPage />,
 			},
 			{
-				path: '/Resume',
+				path: '/resume',
 				element: <ResumePage />,
 			},
 		],
