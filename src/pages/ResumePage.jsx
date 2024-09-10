@@ -8,7 +8,10 @@ const ResumePage = () => {
         </Box>
         <Text fontSize={"0.8em"} pb={"4"}>
           Download my{" "}
-          <Link href="https://docs.google.com/document/d/1jLlTpisQXwfYrXqtNX3BtcZTRx4kIupK-RECiMRHZDs/edit?usp=sharing">
+          <Link
+            href="/resume_shuyingzhou.pdf"
+            download="resume_shuyingzhou.pdf"
+          >
             resume
           </Link>{" "}
         </Text>
