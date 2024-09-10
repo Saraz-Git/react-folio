@@ -11,7 +11,7 @@ const PortfolioPage = () => {
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing="40px">
           <Project
             projectImg="/1.jpg"
-            projectName="Graduation Project"
+            projectName="Bakings"
             projectType="MERN"
             projectUrl={"https://github.com/Saraz-Git/bakings"}
           />
